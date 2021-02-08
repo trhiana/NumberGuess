@@ -29,6 +29,10 @@ public class NumberGuess{
             return "Invalid guess";
         } else if (answer == number){
             return "Correct! \nTotal guesses: " + count;
+        } else if (answer > number){
+            return "Guess is too high. Try again. \nTry number: " + count;
+        } else if (answer < number){
+            return "Guess is too low. Try again. \nTry number: " + count;
         }
     }
 }
