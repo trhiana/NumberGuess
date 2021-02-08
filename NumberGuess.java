@@ -27,6 +27,8 @@ public class NumberGuess{
     public static String determineGuess(int answer, int number, int count){
         if (answer <= 0 || answer > 100){
             return "Invalid guess";
+        } else if (answer == number){
+            return "Correct! \nTotal guesses: " + count;
         }
     }
 }
