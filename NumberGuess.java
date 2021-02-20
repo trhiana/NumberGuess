@@ -33,6 +33,8 @@ public class NumberGuess{
             return "Guess is too high. Try again. \nTry number: " + count;
         } else if (answer < number){
             return "Guess is too low. Try again. \nTry number: " + count;
+        } else{
+            return "Your guess is incorrect. \nTry number: " + count;
         }
     }
 }
